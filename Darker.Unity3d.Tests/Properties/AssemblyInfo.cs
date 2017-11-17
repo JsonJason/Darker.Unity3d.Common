@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Darker.Unity3d.Common")]
+[assembly: AssemblyTitle("Darker.Unity3d.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Darker.Unity3d.Common")]
+[assembly: AssemblyProduct("Darker.Unity3d.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("39f627d7-ab76-498e-a62d-052c948d2611")]
+[assembly: Guid("48d3f9dd-1ef9-4b46-83ee-202e1f66778c")]
 
 // Version information for an assembly consists of the following four values:
 //

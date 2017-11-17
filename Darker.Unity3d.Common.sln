@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darker.Unity3d.Common", "Darker.Unity3d.Common\Darker.Unity3d.Common.csproj", "{39F627D7-AB76-498E-A62D-052C948D2611}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darker.Unity3d.Tests", "Darker.Unity3d.Tests\Darker.Unity3d.Tests.csproj", "{48D3F9DD-1EF9-4B46-83EE-202E1F66778C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{39F627D7-AB76-498E-A62D-052C948D2611}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39F627D7-AB76-498E-A62D-052C948D2611}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39F627D7-AB76-498E-A62D-052C948D2611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D3F9DD-1EF9-4B46-83EE-202E1F66778C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D3F9DD-1EF9-4B46-83EE-202E1F66778C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D3F9DD-1EF9-4B46-83EE-202E1F66778C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D3F9DD-1EF9-4B46-83EE-202E1F66778C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
