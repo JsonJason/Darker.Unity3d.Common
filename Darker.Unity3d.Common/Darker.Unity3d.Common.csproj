@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mechanics\Coroutines\CoroutineRunner.cs" />
+    <Compile Include="Mechanics\Coroutines\ICoroutineRunner.cs" />
     <Compile Include="Mechanics\Raycasting\MouseScreenRaycaster.cs" />
     <Compile Include="Mechanics\Raycasting\Raycaster.cs" />
     <Compile Include="Mechanics\Raycasting\RayRaycaster.cs" />
@@ -55,5 +57,6 @@
     <Compile Include="Services\Time\ITimeService.cs" />
     <Compile Include="Services\Time\UnityTimeService.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
