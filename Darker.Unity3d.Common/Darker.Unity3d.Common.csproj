@@ -47,6 +47,12 @@
   <ItemGroup>
     <Compile Include="Mechanics\Coroutines\CoroutineRunner.cs" />
     <Compile Include="Mechanics\Coroutines\ICoroutineRunner.cs" />
+    <Compile Include="Mechanics\Fading\CanvasGroupFade.cs" />
+    <Compile Include="Mechanics\Fading\MaterialColorFadeable.cs" />
+    <Compile Include="Mechanics\Fading\MaterialPropertyFadeable.cs" />
+    <Compile Include="Mechanics\Fading\RendererFadeable.cs" />
+    <Compile Include="Mechanics\Fading\Fadeable.cs" />
+    <Compile Include="Mechanics\Fading\Fader.cs" />
     <Compile Include="Mechanics\Raycasting\MouseScreenRaycaster.cs" />
     <Compile Include="Mechanics\Raycasting\Raycaster.cs" />
     <Compile Include="Mechanics\Raycasting\RayRaycaster.cs" />
