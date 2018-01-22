@@ -28,13 +28,13 @@ namespace Darker.Unity3d
             set
             {
                 _opacity = value;
-                UpdateColor();
+                UpdateRenderer();
             }
         }
 
         /// <summary>
         ///     Perform the update to the renderers opacity
         /// </summary>
-        protected abstract void UpdateColor();
+        protected abstract void UpdateRenderer();
     }
 }

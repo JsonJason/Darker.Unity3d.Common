@@ -45,11 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mechanics\Coloring\ColorService.cs" />
+    <Compile Include="Mechanics\Coloring\IColorable.cs" />
+    <Compile Include="Mechanics\Coloring\MaterialPropertyColorer.cs" />
+    <Compile Include="Mechanics\Coloring\RendererColorer.cs" />
+    <Compile Include="Mechanics\Coloring\StandardMaterialColorer.cs" />
     <Compile Include="Mechanics\Coroutines\CoroutineRunner.cs" />
     <Compile Include="Mechanics\Coroutines\ICoroutineRunner.cs" />
     <Compile Include="Mechanics\Fading\CanvasGroupFade.cs" />
-    <Compile Include="Mechanics\Fading\MaterialColorFadeable.cs" />
-    <Compile Include="Mechanics\Fading\MaterialPropertyFadeable.cs" />
+    <Compile Include="Mechanics\Fading\MaterialColorFadable.cs" />
     <Compile Include="Mechanics\Fading\RendererFadeable.cs" />
     <Compile Include="Mechanics\Fading\Fadeable.cs" />
     <Compile Include="Mechanics\Fading\Fader.cs" />
