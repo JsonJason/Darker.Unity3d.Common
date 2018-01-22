@@ -1,20 +1,23 @@
-﻿using JS;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ColorService : EffectService, IColorService
+namespace Darker.Unity3d
 {
-    public void SetColorTo(IColorable colorable, Color target)
+    public class ColorService : EffectService
     {
-        colorable.ApplyColor(target);
-    }
+        public ColorService(ITimeService timeService, ICoroutineRunner coroutineService) : base(timeService,
+            coroutineService)
+        {
+        }
 
-    public void FadeColorTo(IColorable colorable, Color target, float duration,
-        IEasing easing)
-    {
-        LerpEffect(new ColorEffect(colorable, target), duration, easing);
-    }
+        public void SetColorTo(IColorable colorable, Color target)
+        {
+            colorable.ApplyColor(target);
+        }
 
-    public ColorService(ITimeService timeService, ICoroutineService coroutineService) : base(timeService, coroutineService)
-    {
+        public void FadeColorTo(IColorable colorable, Color target, float duration,
+            IEasing easing)
+        {
+            LerpEffect(new ColorEffect(colorable, target), duration, easing);
+        }
     }
 }

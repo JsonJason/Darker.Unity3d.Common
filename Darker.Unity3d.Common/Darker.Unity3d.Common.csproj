@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Darker.Common">
+      <HintPath>..\..\Darker.Common\Darker.Common\bin\Debug\Darker.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +48,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mechanics\Effects\ColorEffect.cs" />
     <Compile Include="Mechanics\Coloring\ColorService.cs" />
     <Compile Include="Mechanics\Coloring\IColorable.cs" />
     <Compile Include="Mechanics\Coloring\MaterialPropertyColorer.cs" />
@@ -52,11 +56,54 @@
     <Compile Include="Mechanics\Coloring\StandardMaterialColorer.cs" />
     <Compile Include="Mechanics\Coroutines\CoroutineRunner.cs" />
     <Compile Include="Mechanics\Coroutines\ICoroutineRunner.cs" />
+    <Compile Include="Mechanics\Effects\EffectService.cs" />
+    <Compile Include="Mechanics\Effects\FadeEffect.cs" />
     <Compile Include="Mechanics\Fading\CanvasGroupFade.cs" />
     <Compile Include="Mechanics\Fading\MaterialColorFadable.cs" />
     <Compile Include="Mechanics\Fading\RendererFadeable.cs" />
     <Compile Include="Mechanics\Fading\Fadeable.cs" />
-    <Compile Include="Mechanics\Fading\Fader.cs" />
+    <Compile Include="Mechanics\Effects\IEffect.cs" />
+    <Compile Include="Mechanics\IMovable.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\CLearp.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\EaseFromCurve.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\ElasticIn.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\ElasticInOut.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\ElasticOut.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\IEasing.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InBack.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InBounce.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InCirc.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InCubic.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InExpo.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutBack.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutBounce.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutCirc.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutCubic.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutExpo.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutQuad.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutQuart.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutQuint.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InOutSine.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InQuad.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InQuart.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InQuint.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\InSine.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutBack.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutBounce.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutCirc.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutCubic.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutExpo.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutQuad.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutQuart.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutQuint.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\OutSine.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\PunchIn.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\PunchOut.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\SmootherStep.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\SmoothStep.cs" />
+    <Compile Include="Mechanics\Interpolation\Easings\Spring.cs" />
+    <Compile Include="Mechanics\Interpolation\IInterpolatable.cs" />
+    <Compile Include="Mechanics\Effects\MoveEffect.cs" />
     <Compile Include="Mechanics\Raycasting\MouseScreenRaycaster.cs" />
     <Compile Include="Mechanics\Raycasting\Raycaster.cs" />
     <Compile Include="Mechanics\Raycasting\RayRaycaster.cs" />
